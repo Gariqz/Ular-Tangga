@@ -181,17 +181,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CMakeSFMLGame
+# Target rules for targets named SnakeBoardGame
 
 # Build rule for target.
-CMakeSFMLGame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeSFMLGame
-.PHONY : CMakeSFMLGame
+SnakeBoardGame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SnakeBoardGame
+.PHONY : SnakeBoardGame
 
 # fast build rule for target.
-CMakeSFMLGame/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/build
-.PHONY : CMakeSFMLGame/fast
+SnakeBoardGame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/build
+.PHONY : SnakeBoardGame/fast
 
 #=============================================================================
 # Target rules for targets named sfml-system
@@ -367,7 +367,7 @@ src/board.obj: src/board.cpp.obj
 
 # target to build an object file
 src/board.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/board.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/board.cpp.obj
 .PHONY : src/board.cpp.obj
 
 src/board.i: src/board.cpp.i
@@ -375,7 +375,7 @@ src/board.i: src/board.cpp.i
 
 # target to preprocess a source file
 src/board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/board.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/board.cpp.i
 .PHONY : src/board.cpp.i
 
 src/board.s: src/board.cpp.s
@@ -383,7 +383,7 @@ src/board.s: src/board.cpp.s
 
 # target to generate assembly for a file
 src/board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/board.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/board.cpp.s
 .PHONY : src/board.cpp.s
 
 src/dice.obj: src/dice.cpp.obj
@@ -391,7 +391,7 @@ src/dice.obj: src/dice.cpp.obj
 
 # target to build an object file
 src/dice.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/dice.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/dice.cpp.obj
 .PHONY : src/dice.cpp.obj
 
 src/dice.i: src/dice.cpp.i
@@ -399,7 +399,7 @@ src/dice.i: src/dice.cpp.i
 
 # target to preprocess a source file
 src/dice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/dice.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/dice.cpp.i
 .PHONY : src/dice.cpp.i
 
 src/dice.s: src/dice.cpp.s
@@ -407,7 +407,7 @@ src/dice.s: src/dice.cpp.s
 
 # target to generate assembly for a file
 src/dice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/dice.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/dice.cpp.s
 .PHONY : src/dice.cpp.s
 
 src/game.obj: src/game.cpp.obj
@@ -415,7 +415,7 @@ src/game.obj: src/game.cpp.obj
 
 # target to build an object file
 src/game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/game.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/game.cpp.obj
 .PHONY : src/game.cpp.obj
 
 src/game.i: src/game.cpp.i
@@ -423,7 +423,7 @@ src/game.i: src/game.cpp.i
 
 # target to preprocess a source file
 src/game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/game.cpp.i
 .PHONY : src/game.cpp.i
 
 src/game.s: src/game.cpp.s
@@ -431,7 +431,7 @@ src/game.s: src/game.cpp.s
 
 # target to generate assembly for a file
 src/game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/game.cpp.s
 .PHONY : src/game.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -439,7 +439,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -447,7 +447,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -455,7 +455,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/player.obj: src/player.cpp.obj
@@ -463,7 +463,7 @@ src/player.obj: src/player.cpp.obj
 
 # target to build an object file
 src/player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/player.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/player.cpp.obj
 .PHONY : src/player.cpp.obj
 
 src/player.i: src/player.cpp.i
@@ -471,7 +471,7 @@ src/player.i: src/player.cpp.i
 
 # target to preprocess a source file
 src/player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/player.cpp.i
 .PHONY : src/player.cpp.i
 
 src/player.s: src/player.cpp.s
@@ -479,7 +479,7 @@ src/player.s: src/player.cpp.s
 
 # target to generate assembly for a file
 src/player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CMakeSFMLGame.dir\build.make CMakeFiles/CMakeSFMLGame.dir/src/player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SnakeBoardGame.dir\build.make CMakeFiles/SnakeBoardGame.dir/src/player.cpp.s
 .PHONY : src/player.cpp.s
 
 # Help Target
@@ -496,8 +496,8 @@ help:
 	@echo ... package
 	@echo ... package_source
 	@echo ... rebuild_cache
-	@echo ... CMakeSFMLGame
 	@echo ... FLAC
+	@echo ... SnakeBoardGame
 	@echo ... benchmark_residual
 	@echo ... freetype
 	@echo ... ogg

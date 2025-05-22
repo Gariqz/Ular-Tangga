@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "Dice.h"
 #include <vector>
+#include <map>
 
 class Game
 {
@@ -21,9 +22,11 @@ private:
     int currentPlayerIndex;
     bool gameOver;
 
+    std::map<int, int> snakesAndLadders;
     sf::Font font;
     sf::Text infoText;
 
+    bool turnInProgress;
     void processEvents();
     void update(float deltaTime);
     void render();

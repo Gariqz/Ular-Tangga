@@ -12,6 +12,7 @@ public:
     sf::Vector2f getTilePosition(int tileNumber) const; // nomor petak => posisi pixel
     int getRows() const { return rows; }
     int getCols() const { return cols; }
+    int getTileCount() const;
 
 private:
     int rows;

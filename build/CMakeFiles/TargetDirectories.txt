@@ -1,4 +1,4 @@
-C:/Users/Lenovo/Ular-Tangga/build/CMakeFiles/CMakeSFMLGame.dir
+C:/Users/Lenovo/Ular-Tangga/build/CMakeFiles/SnakeBoardGame.dir
 C:/Users/Lenovo/Ular-Tangga/build/CMakeFiles/package.dir
 C:/Users/Lenovo/Ular-Tangga/build/CMakeFiles/package_source.dir
 C:/Users/Lenovo/Ular-Tangga/build/CMakeFiles/edit_cache.dir

@@ -17,7 +17,7 @@ FetchContent_MakeAvailable(SFML)
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Gather all .cpp files
-add_executable(CMakeSFMLGame
+add_executable(SnakeBoardGame
     src/main.cpp
     src/game.cpp
     src/player.cpp
@@ -25,5 +25,5 @@ add_executable(CMakeSFMLGame
     src/board.cpp
 )
 
-target_link_libraries(CMakeSFMLGame PRIVATE SFML::Graphics SFML::Window SFML::System)
+target_link_libraries(SnakeBoardGame PRIVATE SFML::Graphics SFML::Window SFML::System)
 

@@ -10,13 +10,18 @@ public:
     void render(sf::RenderWindow& window) const;
     void setPosition(int tileNumber);
     int getPosition() const;
+    sf::CircleShape token;
+    void setTokenPosition(const sf::Vector2f& pos) 
+    {
+    token.setPosition(sf::Vector2f(pos.x - token.getRadius(), pos.y - token.getRadius()));
+    }
+    int getId() const;
 
 private:
     int id;
     sf::Color color;
     int tilePosition;  // nomor petak pemain saat ini
     int tileSize;
-    sf::CircleShape token;
 };
 
 #endif

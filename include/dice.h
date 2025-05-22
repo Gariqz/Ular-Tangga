@@ -11,6 +11,23 @@ public:
     void roll();
     int getValue() const;
     void updateAnimation(float deltaTime);
+    bool isRolling() const { return rolling; }
+
+    void reset() {
+    rolling = false;
+    value = 1;
+    diceValueText.setString(std::to_string(value));
+    }
+
+    void setValue(int val)
+    {
+    value = val;
+    diceValueText.setString(std::to_string(value));
+    rolling = false;
+    }
+
+    void setPosition(const sf::Vector2f& pos);
+
 
 private:
     int size;

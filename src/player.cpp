@@ -23,3 +23,8 @@ int Player::getPosition() const
 {
     return tilePosition;
 }
+
+int Player::getId() const
+{
+    return id;
+}

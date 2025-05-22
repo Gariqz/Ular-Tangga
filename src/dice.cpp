@@ -2,13 +2,13 @@
 #include <cstdlib>
 #include <ctime>
 
-Dice::Dice(int size) : size(size), value(1), animationTime(0.f), rolling(false), diceShape(sf::Vector2f(size, size))
+Dice::Dice(int size) : size(size), value(1), animationTime(0.f), rolling(false), diceShape(sf::Vector2f(size, size)), diceValueText(font, "")
 {
     diceShape.setFillColor(sf::Color::White);
     diceShape.setOutlineColor(sf::Color::Black);
     diceShape.setOutlineThickness(2);
 
-    if (!font.loadFromFile("resources/Arial.ttf"))
+    if (!font.openFromFile("./build/bin/resources/Arial.ttf"))
         throw std::runtime_error("Failed to load font in Dice");
 
     diceValueText.setFont(font);
@@ -16,7 +16,13 @@ Dice::Dice(int size) : size(size), value(1), animationTime(0.f), rolling(false),
     diceValueText.setFillColor(sf::Color::Black);
     diceValueText.setStyle(sf::Text::Bold);
     diceValueText.setString(std::to_string(value));
-    diceValueText.setPosition(diceShape.getPosition().x + size / 3, diceShape.getPosition().y + size / 6);
+    diceValueText.setPosition({diceShape.getPosition().x + size / 3, diceShape.getPosition().y + size / 6});
+}
+
+void Dice::setPosition(const sf::Vector2f& pos)
+{
+    diceShape.setPosition(pos);
+    diceValueText.setPosition(sf::Vector2f(pos.x + size / 3.f, pos.y + size / 6.f));
 }
 
 void Dice::render(sf::RenderWindow& window) const
